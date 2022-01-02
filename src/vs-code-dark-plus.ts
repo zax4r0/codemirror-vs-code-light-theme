@@ -2,7 +2,7 @@ import { HighlightStyle, tags } from '@codemirror/highlight';
 import { Extension } from '@codemirror/state';
 import { EditorView } from '@codemirror/view';
 
-// Using https://github.com/one-dark/vscode-one-dark-theme/ as reference for the colors
+// Using https://github.com/PrismJS/prism-themes/blob/master/themes/prism-vsc-dark-plus.css as reference for the colors
 
 const foreground = '#9cdcfe',
   background = '#1e1e1e',
@@ -14,6 +14,7 @@ const foreground = '#9cdcfe',
   invalid = '#ff0000',
   keyword = '#569CD6',
   controlFlowKeywords = '#c586c0',
+  functions = '#dcdcaa',
   typesAndClasses = '#4ec9b0',
   tagNames = '#569CD6',
   operators = '#d4d4d4',
@@ -131,6 +132,7 @@ export const vsCodeDarkPlusHighlightStyle = HighlightStyle.define([
     color: typesAndClasses,
   },
   { tag: [tags.tagName], color: tagNames },
+  { tag: tags.function(tags.variableName), color: functions },
   { tag: [tags.number], color: numbersAndUnits },
   {
     tag: [
