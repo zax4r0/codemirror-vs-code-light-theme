@@ -13,12 +13,17 @@ const foreground = '#9cdcfe',
   tooltipBackground = '#252526',
   invalid = '#ff0000',
   keyword = '#569CD6',
+  controlFlowKeywords = '#c586c0',
   typesAndClasses = '#4ec9b0',
-  operatorsAndRegexes = '#ce9178',
+  tagNames = '#569CD6',
+  operators = '#d4d4d4',
+  regexes = '#d16969',
   strings = '#ce9178',
   names = '#9cdcfe',
+  punctuation = '#d4d4d4',
   propertyNames = '#9cdcfe',
   booleansAndAtoms = '#569CD6',
+  numbersAndUnits = '#b5cea8',
   metaAndComments = '#6a9955';
 
 export const vsCodeDarkPlusTheme = EditorView.theme(
@@ -96,6 +101,7 @@ export const vsCodeDarkPlusTheme = EditorView.theme(
 
 export const vsCodeDarkPlusHighlightStyle = HighlightStyle.define([
   { tag: tags.keyword, color: keyword },
+  { tag: tags.controlKeyword, color: controlFlowKeywords },
   {
     tag: [tags.name, tags.deleted, tags.character, tags.macroName],
     color: names,
@@ -104,6 +110,7 @@ export const vsCodeDarkPlusHighlightStyle = HighlightStyle.define([
     tag: [tags.propertyName],
     color: propertyNames,
   },
+
   { tag: [tags.variableName, tags.labelName], color: names },
   {
     tag: [tags.color, tags.constant(tags.name), tags.standard(tags.name)],
@@ -123,6 +130,8 @@ export const vsCodeDarkPlusHighlightStyle = HighlightStyle.define([
     ],
     color: typesAndClasses,
   },
+  { tag: [tags.tagName], color: tagNames },
+  { tag: [tags.number], color: numbersAndUnits },
   {
     tag: [
       tags.operator,
@@ -133,9 +142,18 @@ export const vsCodeDarkPlusHighlightStyle = HighlightStyle.define([
       tags.link,
       tags.special(tags.string),
     ],
-    color: operatorsAndRegexes,
+    color: operators,
+  },
+  {
+    tag: [tags.regexp],
+    color: regexes,
+  },
+  {
+    tag: [tags.special(tags.string)],
+    color: strings,
   },
   { tag: [tags.meta, tags.comment], color: metaAndComments },
+  { tag: [tags.punctuation], color: punctuation },
   { tag: tags.strong, fontWeight: 'bold' },
   { tag: tags.emphasis, fontStyle: 'italic' },
   { tag: tags.strikethrough, textDecoration: 'line-through' },
