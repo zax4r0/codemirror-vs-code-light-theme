@@ -62,6 +62,11 @@ export const vsCodeDarkPlusTheme = EditorView.theme(
       borderRadius: '5px',
     },
 
+    '&.cm-editor .cm-scroller': {
+      fontFamily:
+        'Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace',
+    },
+
     '&.cm-editor.cm-focused': {
       outline: '5px solid #808080',
     },
