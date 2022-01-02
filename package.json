@@ -1,10 +1,10 @@
 {
-  "name": "@codemirror/theme-one-dark",
-  "version": "0.19.1",
-  "description": "One Dark theme for the CodeMirror code editor",
+  "name": "@upleveled/theme-vs-code-dark-plus",
+  "version": "1.0.0",
+  "description": "VS Code Dark Plus theme for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
-    "prepare": "cm-buildhelper src/one-dark.ts"
+    "prepare": "cm-buildhelper src/vs-code-dark-plus.ts"
   },
   "keywords": [
     "editor",
@@ -35,6 +35,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codemirror/theme-one-dark.git"
+    "url": "https://github.com/upleveled/theme-vs-code-dark-plus.git"
   }
 }
