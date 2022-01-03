@@ -13,7 +13,7 @@ const foreground = '#9cdcfe',
   tooltipBackground = '#252526',
   invalid = '#ff0000',
   keyword = '#569CD6',
-  controlFlowKeywords = '#c586c0',
+  controlFlowAndModuleKeywords = '#c586c0',
   functions = '#dcdcaa',
   typesAndClasses = '#4ec9b0',
   tagNames = '#569CD6',
@@ -117,7 +117,10 @@ export const vsCodeDarkPlusTheme = EditorView.theme(
 
 export const vsCodeDarkPlusHighlightStyle = HighlightStyle.define([
   { tag: tags.keyword, color: keyword },
-  { tag: tags.controlKeyword, color: controlFlowKeywords },
+  {
+    tag: [tags.controlKeyword, tags.moduleKeyword],
+    color: controlFlowAndModuleKeywords,
+  },
   {
     tag: [tags.name, tags.deleted, tags.character, tags.macroName],
     color: names,
