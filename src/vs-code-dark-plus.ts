@@ -150,7 +150,10 @@ export const vsCodeDarkPlusHighlightStyle = HighlightStyle.define([
     color: typesAndClasses,
   },
   { tag: [tags.tagName], color: tagNames },
-  { tag: tags.function(tags.variableName), color: functions },
+  {
+    tag: [tags.function(tags.variableName), tags.function(tags.propertyName)],
+    color: functions,
+  },
   { tag: [tags.number], color: numbersAndUnits },
   {
     tag: [
