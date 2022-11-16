@@ -8,7 +8,7 @@ import { tags } from '@lezer/highlight';
 const foreground = '#9cdcfe',
   background = '#1e1e1e',
   darkBackground = '#000000',
-  highlightBackground = '#2f2f2f',
+  highlightBackground = '#ffffff0f',
   cursor = '#c6c6c6',
   selection = '#094771',
   tooltipBackground = '#252526',
