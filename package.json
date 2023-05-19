@@ -1,19 +1,19 @@
 {
-  "name": "@upleveled/theme-vs-code-dark-plus",
+  "name": "@zax4r0/theme-vs-code-light",
   "version": "1.0.0",
-  "description": "VS Code Dark Plus theme for the CodeMirror code editor",
+  "description": "VS Code light theme for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
-    "prepare": "cm-buildhelper src/vs-code-dark-plus.ts"
+    "prepare": "cm-buildhelper src/vs-code-light.ts"
   },
   "keywords": [
     "editor",
     "code"
   ],
   "author": {
-    "name": "Marijn Haverbeke",
-    "email": "marijnh@gmail.com",
-    "url": "http://marijnhaverbeke.nl"
+    "name": "zax4r0",
+    "email": "zax4r@gmail.com",
+    "url": "http://zax4r0.web.app"
   },
   "type": "module",
   "main": "dist/index.cjs",
@@ -36,6 +36,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/upleveled/theme-vs-code-dark-plus.git"
+    "url": "https://github.com/zax4r0/codemirror-vs-code-light-theme.git"
   }
 }
