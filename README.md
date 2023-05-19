@@ -1,6 +1,6 @@
 <!-- NOTE: README.md is generated from src/README.md -->
 
-# @codemirror/theme-vs-code-dark-plus
+# @codemirror/theme-vs-code-light
 
 This package implements the VS Code Dark Plus theme (the default theme) for the
 [CodeMirror](https://codemirror.net/6/) code editor.
